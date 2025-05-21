@@ -15,6 +15,21 @@ pip install -r requirements.txt
 
 ## Run tests
 
-pytest
+touch app/__init__.py
+touch tests/__init__.py
+update pytest to PYTHONPATH=. pytest
+
+run "pytest" on terminal.
 
 ## Add CI Pipeline (GitHub Actions)
+
+modify code to test the CI created
+
+## Add Code Quality Tools (Linting & Formatting)
+
+- update requirements.txt: add black, and flake8 then install them.
+- pip install -r requirements.txt
+
+## Create a Formatter Check Workflow
+
+- update your GitHub Actions to include code quality checks.
